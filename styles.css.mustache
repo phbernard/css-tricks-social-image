@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Sentinel';
+    src: url('Sentinel-Bold.woff2') format('woff2'),
+        url('Sentinel-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Condensed';
+    src: url('GothamCondensed-Bold.woff2') format('woff2'),
+        url('GothamCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  background-image: url("./background.png");
+}
+
+.featured-image {
+  flex: 2 0;
+  background: url("{{{ mainImage }}}");
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0), transparent);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0), transparent);
+  background-size: cover;
+}
+
+.title-wrapper {
+  flex: 3 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Gotham Condensed';
+  font-size: 15vh;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin: 0vh 10vh 5vh 12vh;
+}
+
+footer {
+  /* Thank you, cssgradient.io */
+  background: rgb(253,73,138);
+  background: linear-gradient(90deg, rgba(253,73,138,1) 0%, rgba(55,144,150,1) 50%, rgba(254,138,1,1) 100%);
+
+  height: 9.6vh;
+
+  display: flex;
+  align-items: center;
+  padding: 2.2vh 5vh 2.2vh 5vh;
+}
+
+.author-pic {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 5vh;
+}
+
+.author-name {
+  flex: 1;
+  font-family: Sentinel;
+  flex-basis: fit-content;
+  font-size: 4.3vh;
+}
+
+.css-tricks {
+  /* Thank you, CSS Filter Generator on CopePen */
+  filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+  height: 4.5vh;
+  width: auto;
+}

@@ -1,0 +1,31 @@
+{
+  "partials": {
+    "content": "./content.html.mustache",
+    "styles": "./styles.css.mustache"
+  },
+  "parameters": [
+    {
+      "name": "title",
+      "type": "text",
+      "demoValue": "How Auto Margins Work in Flexbox"
+    },
+    {
+      "label": "Main image",
+      "name": "mainImage",
+      "type": "imageUrl",
+      "demoValue": "https://css-tricks.com/wp-content/uploads/2019/09/arrow-pattern.png"
+    },
+    {
+      "label": "Author name",
+      "name": "authorName",
+      "type": "text",
+      "demoValue": "Chris Coyier"
+    },
+    {
+      "label": "Author profile image",
+      "name": "authorProfilePic",
+      "type": "imageUrl",
+      "demoValue": "https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=600"
+    }
+  ]
+}

@@ -8,3 +8,7 @@ To use it, clone this repo and:
 cd css-tricks-social-image
 npx itdk view resoc.manifest.json
 ```
+
+This is how close the image template is to the orginal:
+
+![Resoc vs Original](./resoc-vs-original-comparison.gif)
